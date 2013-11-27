@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+var path = require('path');
+var fs = require('fs');
+var libsPath = path.join(path.dirname(fs.realPathSync(__filename)), '../libs');
+
+require(libsPath + 'yads.js').start();
